@@ -1,1 +1,38 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome App</title>
+    <style>
+        body, html { height: 100%; margin: 0; font-family: Arial, sans-serif; }
+        .hero {
+            position: relative; height: 100vh; overflow: hidden;
+        }
+        .video-bg {
+            position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%;
+            width: auto; height: auto; transform: translate(-50%, -50%); z-index: -1;
+        }
+        .overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4); color: white; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+        }
+        .btn {
+            background: #007bff; color: white; padding: 15px 30px; margin: 10px; text-decoration: none;
+            border-radius: 5px; font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <iframe class="video-bg" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_VIDEO_ID&controls=0&rel=0" frameborder="0" allow="autoplay"></iframe>
+        <div class="overlay">
+            <h1>My Awesome App</h1>
+            <p>Revolutionary features • Available now</p>
+            <a href="https://apps.apple.com/your-app-link" class="btn">Download on App Store</a>
+            <a href="https://play.google.com/your-app-link" class="btn">Get it on Google Play</a>
+        </div>
+    </section>
+</body>
+</html>
